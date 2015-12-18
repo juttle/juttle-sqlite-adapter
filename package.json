@@ -1,0 +1,32 @@
+{
+  "name": "juttle-sqlite-adapter",
+  "version": "0.1.0",
+  "description": "Juttle adapter for SQLite",
+  "keywords": ["juttle", "adapter", "sqlite"],
+  "homepage": "https://github.com/juttle/juttle-sqlite-adapter",
+  "bugs": "https://github.com/juttle/juttle-sqlite-adapter/issues",
+  "license": "Apache-2.0",
+  "repository": "juttle/juttle-sqlite-adapter",
+  "scripts": {
+    "test": "mocha -g 'head' --invert",
+    "jshint": "jshint *.js test/*.js",
+    "style": "jscs *.js test/*.js",
+    "lint": "npm run jshint & npm run style"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "juttle-sql-adapter-common": "0.1.0",
+    "knex": "^0.9.0",
+    "sqlite3": "^3.1.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "jshint": "^2.9.1-rc1",
+    "mocha": "^2.3.4",
+    "jscs": "^2.6.0"
+  },
+  "engines": {
+    "node": ">=4.2.0",
+    "npm": ">=2.14.7"
+  }
+}

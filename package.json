@@ -8,7 +8,7 @@
   "license": "Apache-2.0",
   "repository": "juttle/juttle-sqlite-adapter",
   "scripts": {
-    "test": "mocha -g 'head' --invert",
+    "test": "mocha test/*.spec.js",
     "jshint": "jshint *.js test/*.js",
     "style": "jscs *.js test/*.js",
     "lint": "npm run jshint & npm run style"

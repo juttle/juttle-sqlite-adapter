@@ -1,6 +1,6 @@
 # Juttle SQLite Adapter
 
-[![Build Status](https://magnum.travis-ci.com/juttle/juttle-sqlite-adapter.svg?token=y7186y8XHjB7CcxwUcoX)](https://magnum.travis-ci.com/juttle/juttle-sqlite-adapter)
+[![Build Status](https://travis-ci.org/juttle/juttle-sqlite-adapter.svg)](https://travis-ci.org/juttle/juttle-sqlite-adapter)
 
 SQLite adapter for the [Juttle data flow
 language](https://github.com/juttle/juttle), with read & write support.

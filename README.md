@@ -1,6 +1,6 @@
 # Juttle SQLite Adapter
 
-[![Build Status](https://travis-ci.org/juttle/juttle-sqlite-adapter.svg)](https://travis-ci.org/juttle/juttle-sqlite-adapter)
+[![Build Status](https://travis-ci.org/juttle/juttle-sqlite-adapter.svg?branch=master)](https://travis-ci.org/juttle/juttle-sqlite-adapter)
 
 SQLite adapter for the [Juttle data flow
 language](https://github.com/juttle/juttle), with read & write support.
@@ -55,7 +55,7 @@ within Juttle. To do so, add the following to your `~/.juttle/config.json` file:
 ```json
 {
     "adapters": {
-        "juttle-sqlite-adapter": {
+        "sqlite": {
             "connection": {
                 "filename": "/tmp/mydb.sqlite"
             }

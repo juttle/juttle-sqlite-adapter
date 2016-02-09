@@ -1,6 +1,6 @@
 {
   "name": "juttle-sqlite-adapter",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Juttle adapter for SQLite",
   "keywords": [
     "juttle",

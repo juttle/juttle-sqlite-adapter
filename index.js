@@ -7,15 +7,13 @@ var util = require("util");
 var SqlAdapterCommon = require('juttle-sql-adapter-common');
 
 function SqliteAdapter(config, Juttle) {
-    var clientSpecficConfig;
+    var clientSpecficConfig = {};
 
     if (config.connection) {
-        clientSpecficConfig = {
-            "knex_conf": {
-                "client": "sqlite3",
-                "connection": config.connection
-            }
-        };
+        clientSpecficConfig.knex = require('knex')({
+            "client": "sqlite3",
+            "connection": config.connection
+        });
     }
 
     var baseSql = SqlAdapterCommon.call(this, clientSpecficConfig, Juttle);

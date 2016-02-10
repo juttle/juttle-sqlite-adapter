@@ -21,12 +21,12 @@ function SqliteAdapter(config, Juttle) {
     baseSql.name = 'sqlite';
 
     _.extend(baseSql.read, {
-         procName: 'read-sqlite'
-     });
+        procName: 'read-sqlite'
+    });
 
     _.extend(baseSql.write, {
-         procName: 'write-sqlite'
-     });
+        procName: 'write-sqlite'
+    });
 
     return baseSql;
 }

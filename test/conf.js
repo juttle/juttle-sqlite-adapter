@@ -3,15 +3,16 @@ var TestUtils = require('juttle-sql-adapter-common/test/utils');
 TestUtils.getAdapterClass = function () {
     return require('../');
 };
-TestUtils.getAdapterConfig = function (useFake) {
-    return useFake ? {
-        "connection": {
-            "filename": "./not_a_dir/false_dir/mydb.sqlite"
+TestUtils.getAdapterConfig = function () {
+    return [
+        {
+            id: 'default',
+            filename: "./unit-test.sqlite"
+        },
+        {
+            id: 'fake',
+            filename: "./not_dir/should_not_work/not_db.sqlite"
         }
-    } : {
-        "connection": {
-            "filename": "./mydb.sqlite"
-        }
-    };
+    ];
 };
 module.exports = TestUtils;

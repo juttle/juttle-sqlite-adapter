@@ -56,9 +56,7 @@ within Juttle. To do so, add the following to your `~/.juttle/config.json` file:
 {
     "adapters": {
         "sqlite": {
-            "connection": {
-                "filename": "/tmp/mydb.sqlite"
-            }
+            "filename": "/tmp/mydb.sqlite"
         }
     }
 }

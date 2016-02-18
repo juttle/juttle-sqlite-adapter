@@ -77,12 +77,16 @@ Name | Type | Required | Description
 `fetchSize` | integer | no | row limit, defaults to 10000 records
 `from` | moment | no | select points after this time (inclusive)
 `to`   | moment | no | select points before this time (exclusive)
+`db`   | string | no | select the database name to use in your instance
+`id`   | string | no | select the config instance to use
 
 ### Write options
 
 Name | Type | Required | Description
 -----|------|----------|-------------
-`table`   | string | yes | table to write points into
+`table` | string | yes | table to write points into
+`db`   | string | no | select the database name to use in your instance
+`id`   | string | no | select the config instance to use
 
 ## Contributing
 
